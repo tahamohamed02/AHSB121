@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أحسبلي</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/554554192648470528/976808421972115476/unknown.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="keywords"
+    content="probot, tax, probottax, ضريب, ضريبة بروبوت, top.gg, topgg, discord, dashboard, probot dashboard"
+  />
+  <meta name="description" content="احسب ضريبة بروبوت بسهولة" />
+  <meta name="author" content="حاسبة ضريبة بروبوت" />
+  <meta property="og:title" content="ضريبة بروبوت" />
+  <meta property="og:description" content="احسب ضريبة بروبوت بسهولة" />
+  <meta
+    property="og:url"
+    content=""
+  />
+  <meta
+    property="og:image"
+    content=""
+  />
+  <meta name="theme-color" content="#675bf9" />
+  <body>
+    <span class="shadow-drop1"></span>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg mt-4 navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">أحسبلي</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="onek__div">
+
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a href="/" class="navbar-links first-link"
+                  ><li>الرئيسية</li></a
+                >
+                <a href="invite" target="_blank" class="navbar-links first-link"
+                  ><li>دعوة البوت</li></a
+                >
+                <a href="" target="_blank" class="navbar-links first-link"
+                  ><li>سيرفر البوت</li
+                ></a>
+                <div class="btn-group dropstart nav-item margin-on-phone">
+                  <button
+                    type="button"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="img/saudi-arabia.png"
+                      width="30px"
+                      height="30px"
+                    />
+                  </button>
+                  <ul class="dropdown-menu p-2">
+                    <a href="en.html">
+                      <button class="btn btn-lang">
+                        <span
+                          ><img
+                            src="img/united-kingdom.png"
+                            width="27px"
+                            height="27px"
+                          />
+                          &nbsp; English</span
+                        >
+                      </button>
+                    </a>
+                    <a href="index.html">
+                      <button class="btn btn-lang">
+                        <span class="d-block mt-2"
+                          ><img
+                            src="img/saudi-arabia.png"
+                            width="27px"
+                            height="27px"
+                          />
+                          &nbsp; العربية</span
+                        >
+                      </button>
+                    </a>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="row main-row" style="margin-top: 10rem">
+        <div class="col-md-7 mt-5 my-2">
+          <div style="margin-top: 3.5rem"></div>
+         <p class="face-main">😀</p>
+          <p class="tag-main" style="letter-spacing: 0">سـهـل وسـريـع</p>
+           
+          <h1 class="main-title mt-2">أحسبلي: ، لحسب ضريبة البروبوت</h1>
+          <p class="title-descreption mt-4">
+أحسب ضريبة البروبوت بسهولة عن طريق موقعنا او البوت الخاص بنا          </p>
+          <div class="button-group mt-5">
+            <a href="invite" target="_blank"
+              ><button class="btn btn-invite d-inline my-1">
+دعوة البوت                </button></a
+            >
+            <button class="btn btn-help d-inline ml-2 my-1" id="helpBTN">
+هل تحتاج مساعدة؟            </button>
+          </div>
+        </div>
+        <div class="col-md-5 my-2">
+          <div class="calculator-box card p-4">
+            <input
+              type="number"
+              max="5000"
+              oninput="changing()"
+              placeholder="أدخل المبلغ"
+              id="input"
+              class="input-tax"
+            />
+            <hr class="border-box" />
+            <h1 class="taxof-ar">أحسبلي بـمبلغ: <span id="taxOF">0</span></h1>
+            <hr class="border-box mt-3" />
+            <p class="text-light">
+              البوت سيأخذ: <span class="result-number" id="tax">0</span>
+            </p>
+            <p class="text-light">
+             المبلغ الذي سيستلمه الشخص:
+              <span class="result-number" id="userRes">0</span>
+            </p>
+            <p class="text-light">
+              المبلغ الذي يجب تحويله لأستلام المبلغ كاملاً:
+              <span class="result-number" id="mountSh">0</span>
+            </p>
+            <button disabled class="btn btn-copyresults float-end" id="copyres">
+              نسخ النتيجة             
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <p class="mt-4 rights">
+              <span id="year"></span>
+            </p>
+    
+    <textarea id="copyinput" hidden></textarea>
+    <span class="shadow-drop2"></span>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
